@@ -1,0 +1,48 @@
+.gallerBody {
+    min-height: 100vh;
+    /* width: 100vw; */
+    overflow-x: hidden;
+    padding-left: 200px;
+    padding-right: 200px;
+    background-color: black;
+}
+
+.gallerBody h1 {
+    font-size: 40px;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    margin-left: -7px;
+}
+
+.gallerBody span {
+    color: rgb(118, 118, 118);
+    font-family: Calibri;
+}
+
+.gallerBody img {
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 14px;
+    border-radius: 10px;
+}
+
+.gallerBody .gallery {
+    columns: 220px;
+}
+
+@media (max-width:600px) {
+    .gallerBody {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .gallerBody h1 {
+        font-size: 30px;
+        margin-left: 0px;
+    }
+
+    .gallerBody .gallery {
+        columns: 120px;
+    }
+}

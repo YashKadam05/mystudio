@@ -1,0 +1,112 @@
+.pricing {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 200px;
+  padding-right: 200px;
+  /* background: #0a0a0a; */
+  background-color: black;
+  color: white;
+}
+
+.pricing .pricing-title {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 70px;
+  /* background: linear-gradient(45deg, #ff6b6b, #4ecdc4); */
+  background-color: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.pricing .pricing-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 0 auto;
+}
+
+.pricing .pricing-card {
+  background: linear-gradient(145deg, #101010, #1e1e1e);
+  padding: 30px;
+  width: 200px;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  height: 800px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing .pricing-card:hover {
+  transform: translateY(-10px);
+  /* box-shadow: 0 20px 60px rgba(255, 107, 107, 0.2); */
+}
+
+.pricing .pricing-card.featured {
+  /* background: linear-gradient(145deg, #ff6b6b, #4ecdc4); */
+  background: white;
+  color: black;
+  transform: scale(1.05);
+}
+.pricing .pricing-card.featured .pricing-btn {
+  background-color: black;
+  color: white;
+}
+.pricing .pricing-card.featured li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.313);
+
+}
+
+.pricing .pricing-price {
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 20px 0;
+}
+
+.pricing .pricing-features {
+  list-style: none;
+  margin: 30px 0;
+}
+
+.pricing .pricing-features li {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.pricing .pricing-btn {
+  display: inline-block;
+  padding: 15px 30px;
+  /* background: linear-gradient(45deg, #ff6b6b, #4ecdc4); */
+  /* color: white; */
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+@media (max-width:550px) {
+  .pricing {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .pricing .pricing-title {
+    font-size: 40px;
+  }
+
+  .pricing .pricing-card {
+    height: auto;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
