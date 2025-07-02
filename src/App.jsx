@@ -24,13 +24,10 @@ function App() {
       {(!first && <Loader />)}
       {first && (<Routes>
         <Route path="/mystudio/" element={<><Navbar /><Hero /><Service /><Investment /><Booking /></>} />
-<<<<<<< HEAD
         <Route path="/mystudio/gallery" element={<Gallery />} />
         <Route path="/mystudio/about" element={<><FormBooking /><Booking /></>} />
-=======
         <Route path="/mystudio/gallery/" element={<Gallery />} />
         <Route path="/mystudio/about/" element={<><FormBooking /><Booking /></>} />
->>>>>>> 
       </Routes>)}
       {(first && <Footer />)}
     </>
