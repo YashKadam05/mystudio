@@ -24,7 +24,7 @@ function App() {
       {(!first && <Loader />)}
       {first && (<Routes>
         <Route path="/mystudio/" element={<><Navbar /><Hero /><Service /><Investment /><Booking /></>} />
-        <Route path="/mystudio/gallery/" element={<Gallery />} />
+        <Route path="/gallery/" element={<Gallery />} />
         <Route path="/mystudio/about/" element={<><FormBooking /><Booking /></>} />
       </Routes>)}
       {(first && <Footer />)}
