@@ -19,7 +19,7 @@ export default function Booking() {
         <h1><span>|</span>Bookings</h1>
         <p>Get Connected to us and Book your photography session now.</p>
       </div>
-      <Link to="/about" className="link" style={{height:"20px"}} onClick={scrollToTop}>Book Now</Link>
+      <Link to="/mystudio/about" className="link" style={{height:"20px"}} onClick={scrollToTop}>Book Now</Link>
     </div>
 
   </div>
